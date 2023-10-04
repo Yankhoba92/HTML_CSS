@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FLEXBOX_ALIGN-SELF</title>
+        <link rel="stylesheet" href="./css/config.css">
+        <link rel="stylesheet" href="./css/flexbox_align-self.css">
+    </head>
+
+    <body>
+        <section>
+            <h1>FLEXBOX</h1>
+            <p id="sommaire"><a href="./flexbox_sommaire.html"><img src="./img/home.png" alt="sommaire"></a></p>
+            <h2>align-self</h2>
+            <h3>propriété appliquée sur le flex-item = ENFANT</h3>
+            <h4>align-self: auto (par défaut)</h4>
+            <div class="flex-container h-300">
+                <p class="flex-item w-150 h-auto align-self--auto">auto</p>
+                <p class="flex-item w-150 h-auto align-self--start">start</p>
+                <p class="flex-item w-150 h-auto align-self--center">center</p>
+                <p class="flex-item w-150 h-auto align-self--end">end</p>
+                <p class="flex-item w-150 h-auto align-self--stretch">stretch</p>
+                <p class="flex-item w-150 h-auto align-self--baseline">baseline</p>
+            </div>
+
+            <h4>flex-container parent avec align-items : stretch
+                <br>
+                flex-item enfant avec align-self : flex-end
+            </h4>
+            <div class="flex-container h-300 align-items--stretch">
+                <p class="flex-item w-150 h-auto">1</p>
+                <p class="flex-item w-150 h-auto">2</p>
+                <p class="flex-item w-150 h-auto">3</p>
+                <p class="flex-item w-300 h-auto align-self--end">align-self: end</p>
+                <p class="flex-item w-150 h-auto">4</p>
+                <p class="flex-item w-150 h-auto">5</p>
+            </div>
+        </section>
+    </body>
+
+</html>

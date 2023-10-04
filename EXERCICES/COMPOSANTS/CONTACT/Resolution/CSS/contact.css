@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    padding: 2rem;
+    font-size: large;
+  }
+  .container{
+    margin: 7rem;
+  }
+  h1{
+    text-align: center;
+  }
+  .infos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+  h2{
+    color: rgb(234, 234, 97);
+    border-right:1px solid grey ;
+    margin-right: 1rem;
+    padding-right: 1rem;
+
+  }
+  .adress, .support{
+    display: flex;
+  }
+  .formulaire{
+    margin-top: 10rem;
+    text-align: initial;
+  }
+  .contact-form{
+    
+    display: flex;
+    justify-content: space-between;
+  }
+  label{
+    text-align: initial;
+  }
+  input{
+    height: 3rem;
+    width: 34rem;
+  }
+  textarea{
+    width: 100%;
+    height: 30rem;
+  }
+  .formulaire-end{
+    margin-top: 5rem;
+  }
+  button{
+    border: none;
+    color: white;
+    background-color: rgb(234, 234, 97);
+    width: 15rem;
+    height: 3rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

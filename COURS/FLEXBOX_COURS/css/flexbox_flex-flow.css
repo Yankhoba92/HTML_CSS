@@ -1,0 +1,25 @@
+.flew-flow--default {
+  flex-flow: row nowrap; /* valeur par défaut */
+}
+
+.flex-flow--row-wrap {
+  flex-flow: row wrap;
+}
+
+.flex-flow--row-wrap-reverse {
+  flex-flow: row wrap-reverse;
+}
+
+.flex-flow--col-nowrap {
+  flex-flow: column nowrap;
+}
+
+.flex-flow--col-wrap {
+  flex-flow: column wrap;
+  height: 250px;
+}
+
+.flex-flow--col-wrap-reverse {
+  flex-flow: column wrap-reverse;
+  height: 250px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEXBOX_CONCEPTS</title>
+    <link rel="stylesheet" href="css/flexbox.css" />
+  </head>
+
+  <body>
+    <h1>FLEXBOX</h1>
+
+    <figure>
+      <img src="./flexbox.png" alt="" />
+    </figure>
+
+    <h2>flex-direction : row (par défaut)</h2>
+    <section>
+      <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+      </div>
+    </section>
+
+    <h2>flex-direction : row-reverse</h2>
+    <section>
+      <div class="flex-container fd-row-reverse">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+      </div>
+    </section>
+
+    <h2>flex-direction : column</h2>
+    <section>
+      <div class="flex-container fd-col">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+      </div>
+    </section>
+
+    <h2>flex-direction : column-reverse</h2>
+    <section>
+      <div class="flex-container fd-col-reverse">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+      </div>
+    </section>
+
+    <h2>flex-wrap : nowrap</h2>
+    <!-- section.flex-container>div.flex-item{$}*12 -->
+    <section class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+    </section>
+
+    <h2>flex-wrap : wrap</h2>
+    <section class="flex-container fw">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+    </section>
+
+    <h2>flex-wrap : wrap-reverse</h2>
+    <section class="flex-container fw-reverse">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+    </section>
+
+    <h2>flex-flow : row wrap-reverse</h2>
+    <section class="flex-container ff">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+    </section>
+
+    <h2>Justify-content : flex-start (par defaut)</h2>
+    <section class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+    </section>
+    
+    <h2>Justify-content : flex-end (par defaut)</h2>
+    <section class="flex-container jc-end h-500">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+    </section>
+
+  </body>
+</html>

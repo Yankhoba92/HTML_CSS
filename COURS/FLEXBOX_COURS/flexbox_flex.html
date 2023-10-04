@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FLEXBOX_FLEX</title>
+        <link rel="stylesheet" href="./css/config.css">
+        <link rel="stylesheet" href="./css/flexbox_flex.css">
+    </head>
+
+    <body>
+        <section>
+            <h1>FLEXBOX</h1>
+            <p id="sommaire"><a href="./flexbox_sommaire.html"><img src="./img/home.png" alt="sommaire"></a></p>
+            <h2>
+                flex: flex-grow / flex-shrink / flex-basis
+                <br>
+                flex: 0 1 auto (par défaut)
+            </h2>
+            <h3>propriété appliquée sur le flex-item = ENFANT</h3>
+
+            <h4>
+                largeur du flex-container parent : 1000px
+                <br>
+                flex:1 === flex: 1 1 auto
+                <br>
+                flex:0 === flex: 0 1 auto
+            </h4>
+            <div class="flex-container w-1000">
+                <p class="flex flex--1">flex:1</p>
+                <p class="flex flex--0">flex:0</p>
+            </div>
+
+        </section>
+    </body>
+
+</html>

@@ -1,0 +1,26 @@
+.order > * {
+  width: 120px;
+  height: 120px;
+  line-height: 12rem;
+  font-size: 3rem;
+}
+
+.premier {
+  order: -1;
+}
+
+.dernier {
+  order: 1;
+}
+
+.moinsDeux {
+  order: -2;
+}
+
+.deux {
+  order: 2;
+}
+
+.trois {
+  order: 3;
+}

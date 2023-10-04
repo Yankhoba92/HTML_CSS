@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IMPORTANT</title>
+        <link rel="stylesheet" href="./css/config.css">
+        <link rel="stylesheet" href="./css/important.css">
+    </head>
+
+    <body>
+        <section>
+            <h1>FLEXBOX</h1>
+            <p id="sommaire"><a href="./flexbox_sommaire.html"><img src="./img/home.png" alt="sommaire"></a></p>
+            <h2>
+                flex: flex-grow / flex-shrink / flex-basis
+                <br>
+                flex: 0 1 auto (par défaut)
+            </h2>
+            <h3>propriété appliquée sur le flex-item = ENFANT</h3>
+
+            <h4>
+                largeur du flex-container parent : 1000px
+                <br>
+                largeur du flex-item n°1 : 600px
+                <br>
+                largeur du flex-item n°2 : ?
+            </h4>
+            <div class="flex-container p-10 w-1000">
+                <p class="flex item-min-width">
+                    flex-basis: 50%
+                    <br>
+                    min-width: 60%
+                </p>
+                <p class="flex item-2">
+                    flex-grow: 1
+                    <br>
+                    width: 100px
+                </p>
+            </div>
+
+            <h4>
+                largeur du flex-container parent : 1000px
+                <br>
+                largeur du flex-item n°1 : 300px
+                <br>
+                largeur du flex-item n°2 : ?
+            </h4>
+            <div class="flex-container p-10 w-1000">
+                <p class="flex item-max-width">
+                    flex-basis: 50%
+                    <br>
+                    max-width: 30%
+                </p>
+                <p class="flex item-2">
+                    flex-grow: 1
+                    <br>
+                    width: 100px
+                </p>
+            </div>
+
+            <h4>
+                largeur du flex-container parent : 1000px
+                <br>
+                largeur du flex-item n°1 : 300px
+                <br>
+                largeur du flex-item n°2 : ?
+            </h4>
+            <div class="flex-container p-10 w-1000">
+                <p class="flex item-min-max-width">
+                    flex-basis: 50%
+                    <br>
+                    min-width: 60%
+                    <br>
+                    max-width: 80%
+                </p>
+            </div>
+
+            <h4>
+                largeur du flex-container parent : 1000px
+                <br>
+                largeur du flex-item n°1 : ?
+                <br>
+                largeur du flex-item n°2 : ?
+                <br>
+                flex:1 est + fort que width
+            </h4>
+            <div class="flex-container p-10 w-1000">
+                <p class="flex item-3">
+                    flex-shrink: 1
+                    <br>
+                    width: 100px
+                </p>
+                <p class="flex item-4">
+                    flex-basis: 300px
+                    <br>
+                    width: 700px
+                </p>
+            </div>
+
+        </section>
+    </body>
+
+</html>

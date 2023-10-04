@@ -1,0 +1,13 @@
+.flex {
+  font-size: 3rem;
+  line-height: 8rem;
+  text-align: center;
+}
+
+.flex--1 {
+  flex: 1;
+}
+
+.flex--0 {
+  flex: 0;
+}

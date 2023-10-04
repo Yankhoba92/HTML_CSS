@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FLEXBOX_FLEX-BASIS</title>
+        <link rel="stylesheet" href="./css/config.css">
+        <link rel="stylesheet" href="./css/flexbox_flex-basis.css">
+    </head>
+
+    <body>
+        <section>
+            <h1>FLEXBOX</h1>
+            <p id="sommaire"><a href="./flexbox_sommaire.html"><img src="./img/home.png" alt="sommaire"></a></p>
+            <h2>flex-basis: auto (par défaut)</h2>
+            <h3>propriété appliquée sur le flex-item = ENFANT</h3>
+
+            <h4>
+                largeur du flex-container parent : auto
+                <br>
+                comprendre flex-basis
+            </h4>
+            <div class="flex-container w-1000">
+                <p class="info w-300">flex-basis: auto <br>
+                    taille item = contenu
+                </p>
+                <p class="info w-300">flex-basis: valeur <br>
+                    taille item = valeur
+                </p>
+                <p class="info w-300">flex-basis: 0 <br>
+                    taille item = 0 ou contenu
+                </p>
+            </div>
+
+            <h4>largeur du flex-container parent : 1000px</h4>
+            <div class="flex-container p-10 w-1000">
+                <p class="flex-basis item1">
+                    flex-grow: 0<br>
+                    flex-shrink: 0<br>
+                    flex-basis: 50%<br><br>
+                    mesure EXTACTEMENT 50% du flex-container
+                </p>
+                <p class="flex-basis item2">
+                    flex-grow: 1<br>
+                    flex-shrink: 0<br>
+                    flex-basis: 50%<br><br>
+                    mesure AU MOINS 50% du flex-container
+                </p>
+                <p class="flex-basis item3">
+                    flex-grow: 1<br>
+                    flex-shrink: 1<br>
+                    flex-basis: 50%<br><br>
+                    impossible de prédire la largeur
+                </p>
+            </div>
+
+
+
+        </section>
+    </body>
+
+</html>

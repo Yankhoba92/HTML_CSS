@@ -1,0 +1,41 @@
+.flex {
+  font-size: 3rem;
+  line-height: 8rem;
+  text-align: center;
+}
+
+.item-min-width {
+  flex-basis: 50%;
+  min-width: 60%;
+}
+
+.item-max-width {
+  flex-basis: 50%;
+  max-width: 30%;
+}
+
+.item-min-max-width {
+  flex-basis: 50%;
+  min-width: 60%;
+  max-width: 30%;
+}
+
+.item-1 {
+  flex-basis: 50%;
+  min-width: 60%;
+}
+
+.item-2 {
+  flex-grow: 1; /* non nul */
+  width: 100px;
+}
+
+.item-3 {
+  flex-shrink: 1; /* non nul */
+  width: 100px;
+}
+
+.item-4 {
+  flex-basis: 300px; /* différent de auto */
+  width: 700px;
+}

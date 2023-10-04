@@ -1,0 +1,132 @@
+:root {
+  --header_bgcolor: #66b3c1;
+  --h2_bgcolor: #dd1e1e;
+  --color1: #90c9d5;
+  --color2: #a3cfcd;
+  --color3: #b3d4c6;
+  --color4: #c0d9bf;
+  --color5: #cadbb8;
+  --color6: #d2dbaf;
+  --color7: #dad8a5;
+  --color8: #dfd199;
+  --color9: #e6c78c;
+  --color10: #edba7c;
+  --color11: #f5aa6c;
+  --color12: #ff9758;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2rem;
+  border: solid red 0px;
+}
+
+h1 {
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  border: 2px solid #000000;
+  padding: 1rem;
+  background-color: #ccc;
+  margin: 1rem;
+}
+
+.flex-item {
+  border: 2px solid #000;
+  display: grid;
+  place-content: center;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+section {
+  border: solid 0px #000000;
+  margin: 1rem auto 2rem auto;
+}
+
+.flex-item:nth-child(1) {
+  background-color: var(--color1);
+}
+.flex-item:nth-child(2) {
+  background-color: var(--color2);
+}
+.flex-item:nth-child(3) {
+  background-color: var(--color3);
+}
+.flex-item:nth-child(4) {
+  background-color: var(--color4);
+}
+.flex-item:nth-child(5) {
+  background-color: var(--color5);
+}
+.flex-item:nth-child(6) {
+  background-color: var(--color6);
+}
+.flex-item:nth-child(7) {
+  background-color: var(--color7);
+}
+.flex-item:nth-child(8) {
+  background-color: var(--color8);
+}
+.flex-item:nth-child(9) {
+  background-color: var(--color9);
+}
+.flex-item:nth-child(10) {
+  background-color: var(--color10);
+}
+.flex-item:nth-child(11) {
+  background-color: var(--color11);
+}
+.flex-item:nth-child(12) {
+  background-color: var(--color12);
+}
+
+/* FLEX-DIRECTION */
+
+.fd-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.fd-col {
+  flex-direction: column;
+}
+
+.fd-col-reverse {
+  flex-direction: column-reverse;
+}
+/* FLEX-WRAP */
+.fw {
+  flex-wrap: wrap;
+}
+.fw-reverse {
+  flex-wrap: wrap-reverse;
+}
+/* FLEX-FLOW */
+.ff{
+  flex-flow: row wrap-reverse;
+}
+
+/* JUSTIFY-CONTENTY */
+.jc-end{
+  justify-content: end;
+}
+
+.h-500{
+  height: 500;
+}

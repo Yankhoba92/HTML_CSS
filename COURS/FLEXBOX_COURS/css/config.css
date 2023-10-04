@@ -1,0 +1,257 @@
+/* -----------------------------------------------------------------------------------------
+                                            RESET
+------------------------------------------------------------------------------------------*/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*=10px*/
+}
+
+/* -----------------------------------------------------------------------------------------
+                                            VARIABLES
+------------------------------------------------------------------------------------------*/
+:root {
+  --flex-container_bgcolor: #e6e6e6;
+  --link_bgcolor: #ee1f7a;
+  --flex-item_bgcolor: #89ccf7;
+  --color1: #ffc8af;
+  --color2: #ffe989;
+  --color3: #097ab5;
+  --color4: #07c7a8;
+  --color5: #82ffa1;
+}
+
+/* -----------------------------------------------------------------------------------------
+                                            VARIABLES
+------------------------------------------------------------------------------------------*/
+body {
+  padding: 20px;
+}
+
+section {
+  margin: 0 auto;
+  width: 60%;
+}
+
+h1 {
+  margin: 1rem auto;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 1rem auto;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+h3 {
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 2.1rem;
+  line-height: 2.1rem;
+  background-color: #6cacbc;
+  color: #fff;
+  margin: 0.2rem auto;
+  padding: 1rem;
+  width: auto;
+  border-radius: 3rem;
+}
+
+h4 {
+  margin: 3rem 0.2rem auto auto;
+  font-size: 2rem;
+}
+
+ul {
+  margin-left: 2rem;
+  margin: 2rem 0;
+}
+
+li {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: initial;
+}
+
+a:hover {
+  color: var(--link_bgcolor);
+  font-weight: bold;
+}
+
+#sommaire {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#sommaire img {
+  width: 4rem;
+  height: auto;
+}
+
+/* -----------------------------------------------------------------------------------------
+                                            PARENT FLEXIBLE
+------------------------------------------------------------------------------------------*/
+.flex-container {
+  display: flex;
+  background-color: var(--flex-container_bgcolor);
+  margin: 1rem auto;
+}
+
+.inline-flex {
+  display: inline-flex;
+  margin: 1rem;
+}
+
+/* -----------------------------------------------------------------------------------------
+                                            ENFANT FLEXIBLE
+------------------------------------------------------------------------------------------*/
+.flex-item {
+  font-size: 3rem;
+  line-height: 8rem;
+  width: 8rem;
+  height: 8rem;
+  text-align: center;
+  background-color: var(--flex-item_bgcolor);
+}
+
+.block :first-child,
+.flex-container :first-child,
+.inline-flex :first-child {
+  background-color: var(--color1);
+}
+
+.block :nth-child(2),
+.flex-container :nth-child(2),
+.inline-flex :nth-child(2) {
+  background-color: var(--color2);
+}
+
+.block :nth-child(3),
+.flex-container :nth-child(3),
+.inline-flex :nth-child(3) {
+  background-color: var(--color3);
+}
+
+.flex-container :nth-child(4),
+.inline-flex :nth-child(4) {
+  background-color: var(--color4);
+}
+
+.flex-container :nth-child(5),
+.inline-flex :nth-child(5) {
+  background-color: var(--color5);
+}
+
+/* -----------------------------------------------------------------------------------------
+                                            UTILITIES
+------------------------------------------------------------------------------------------*/
+.flx-col {
+  flex-direction: column;
+}
+
+.px-5 {
+  padding: 0 5px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-150 {
+  width: 150px;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+.w-500 {
+  width: 500px;
+}
+
+.w-600 {
+  width: 600px;
+}
+
+.w-800 {
+  width: 800px;
+}
+
+.w-1000 {
+  width: 1000px;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.h-200 {
+  height: 200px;
+}
+
+.h-300 {
+  height: 300px;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.fs--tiny {
+  font-size: 1rem;
+}
+
+.fs--sm {
+  font-size: 1.5rem;
+}
+
+.fs--md {
+  font-size: 2rem;
+}
+
+.fs--l {
+  font-size: 2.5rem;
+}
+
+.fs--xl {
+  font-size: 3rem;
+}
+
+span.baseline {
+  position: relative;
+}
+
+.baseline::after {
+  display: block;
+  content: "";
+  width: 10000px;
+  height: 2px;
+  background-color: red;
+  z-index: 909;
+  position: absolute;
+  bottom: 0;
+  left: -1000px;
+}

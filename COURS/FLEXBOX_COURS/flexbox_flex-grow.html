@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FLEXBOX_FLEX-GROW</title>
+        <link rel="stylesheet" href="./css/config.css">
+        <link rel="stylesheet" href="./css/flexbox_flex-grow.css">
+    </head>
+
+    <body>
+        <section>
+            <h1>FLEXBOX</h1>
+            <p id="sommaire"><a href="./flexbox_sommaire.html"><img src="./img/home.png" alt="sommaire"></a></p>
+            <h2>flex-grow: 0 (par défaut)</h2>
+            <h3>propriété appliquée sur le flex-item = ENFANT</h3>
+
+            <h4>
+                largeur du flex-container parent : 1000px
+            </h4>
+            <div class="flex-container w-1000 h-200">
+                <p class="flex-item w-auto flex-grow--0">flex-grow : 0</p>
+                <p class="flex-item w-auto flex-grow--0">flex-grow: 0</p>
+                <p class="flex-item w-auto flex-grow--0">flex-grow: 0</p>
+            </div>
+
+
+            <h4>
+                largeur du flex-container parent : 1000px
+            </h4>
+            <div class="flex-container w-1000 h-200">
+                <p class="flex-item w-auto flex-grow--0">flex-grow : 0</p>
+                <p class="flex-item w-auto flex-grow--1">flex-grow: 1</p>
+                <p class="flex-item w-auto flex-grow--1">flex-grow: 1</p>
+            </div>
+
+
+            <h4>
+                largeur du flex-container parent : 1000px
+            </h4>
+            <div class="flex-container w-1000 h-200">
+                <p class="flex-item w-auto flex-grow--0">flex-grow : 0</p>
+                <p class="flex-item w-auto flex-grow--1">flex-grow: 1</p>
+                <p class="flex-item w-auto flex-grow--2">flex-grow: 2</p>
+            </div>
+
+            <h4>CAS n°1
+                <br>
+                largeur du flex-container parent : 1000px
+                <br>
+                chaque flex-item doté de flex: 1 = flex: 1 1 0%
+                <br>
+                <b>TAILLE FINALE ELEMENT = (flex-grow / (somme flex-grow)) * (largeur flex-container - somme flex-basis)
+                    +
+                    flex-basis
+                    élément</b>
+            </h4>
+            <div class="flex-container w-1000 h-200">
+                <p class="flex-item w-auto flex--1">flex: 1</p>
+                <p class="flex-item w-auto flex--1">flex: 1</p>
+            </div>
+
+            <h4>CAS n°2
+                <br>
+                largeur du flex-container parent : 1000px
+                <br>
+                <b>TAILLE FINALE ELEMENT = (flex-grow / (somme flex-grow)) * (largeur flex-container - somme flex-basis)
+                    +
+                    flex-basis
+                    élément</b>
+            </h4>
+            <div class="flex-container w-1000 h-200">
+                <p class="flex-item w-auto cas2--item1">flex: 1 0 200px</p>
+                <p class="flex-item w-auto cas2--item2">flex: 1 0 400px</p>
+            </div>
+
+            <h4>CAS n°3
+                <br>
+                largeur du flex-container parent : 1000px
+                <br>
+                <b>TAILLE FINALE ELEMENT = (flex-grow / (somme flex-grow)) * (largeur flex-container - somme flex-basis)
+                    +
+                    flex-basis
+                    élément</b>
+                <br>
+                la taille flex-item dépend de la taille du seocnd flex-item (335px) car flex-basis:auto
+            </h4>
+            <div class="flex-container w-1000 h-200">
+                <p class="flex-item w-auto flex--1">flex: 1 = flex: 1 1 0%</p>
+                <p class="flex-item w-auto flex-grow--1">flex-grow: 1 = flex: 1 1 auto</p>
+            </div>
+
+            <h4>CAS n°4
+                <br>
+                largeur du flex-container parent : 1000px
+                <br>
+                <b>TAILLE FINALE ELEMENT = (flex-grow / (somme flex-grow)) * (largeur flex-container - somme flex-basis)
+                    +
+                    flex-basis
+                    élément</b>
+                <br>
+                espace restant = 1000px - 200px - largeur item2 = 1000 - 200 - 200 = 600px
+            </h4>
+            <div class="flex-container w-1000 h-200">
+                <p class="flex-item w-auto cas4--item1">flex: 1 0 200px</p>
+                <p class="flex-item cas4--item2">width: 200px</p>
+            </div>
+
+            <h4>CAS n°5
+                <br>
+                largeur du flex-container parent : 1000px
+                <br>
+                <b>TAILLE FINALE ELEMENT = (flex-grow / (somme flex-grow)) * (largeur flex-container - somme flex-basis)
+                    +
+                    flex-basis
+                    élément</b>
+                <br>
+                espace restant = 1000 - (largeur flex-itemm) = 1000 - 910 - 200 = -10 (valeur négative)
+            </h4>
+            <div class="flex-container h-300 w-1000">
+                <p class="cas5--item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                    magni fuga ab voluptatum aliquid quae? Quo dolores minima perspiciatis! Eaque magnam ab voluptatibus
+                    hic odit aliquam, vitae unde a possimus voluptatem ex veritatis molestiae eligendi facilis
+                    asperiores animi quaerat! Beatae culpa impedit eius distinctio nam ipsum voluptate nobis nesciunt
+                    quidem!</p>
+                <p class="flex-item cas5--item2">width: 200px</p>
+            </div>
+
+        </section>
+    </body>
+
+</html>

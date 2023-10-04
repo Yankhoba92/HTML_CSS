@@ -1,0 +1,30 @@
+.info {
+  font-size: 3rem;
+  line-height: 5rem;
+  text-align: center;
+  background-color: var(--flex-item_bgcolor);
+}
+
+.flex-basis {
+  font-size: 2rem;
+  line-height: auto;
+  text-align: center;
+}
+
+.item1 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
+
+.item2 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
+
+.item3 {
+  flex-grow: 1;
+  flex-shrihk: 1;
+  flex-basis: 50%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FLEXBOX_ALIGN_ITEMS</title>
+        <link rel="stylesheet" href="./css/config.css">
+        <link rel="stylesheet" href="./css/flexbox_align-items.css">
+    </head>
+
+    <body>
+        <!-- appliquer les classes : flx-col h-300 pour une dispo en colonne -->
+        <section>
+            <h1>FLEXBOX</h1>
+            <p id="sommaire"><a href="./flexbox_sommaire.html"><img src="./img/home.png" alt="sommaire"></a></p>
+            <h2>align-items</h2>
+            <h3>propriété appliquée sur le conteneur parent</h3>
+            <h4>align-items: stretch: (par défaut)</h4>
+            <div class="flex-container h-300 align-items--stretch">
+                <p class="flex-item h-auto">1</p>
+                <p class="flex-item h-auto">2</p>
+                <p class="flex-item h-auto">3</p>
+                <p class="flex-item h-auto">4</p>
+                <p class="flex-item h-auto">5</p>
+            </div>
+
+            <h4>align-items: flex-start</h4>
+            <div class="flex-container w-auto h-300 align-items--start">
+                <p class="flex-item">1</p>
+                <p class="flex-item">2</p>
+                <p class="flex-item">3</p>
+                <p class="flex-item">4</p>
+                <p class="flex-item">5</p>
+            </div>
+
+            <h4>align-items: flex-end</h4>
+            <div class="flex-container h-300 align-items--end">
+                <p class="flex-item">1</p>
+                <p class="flex-item">2</p>
+                <p class="flex-item">3</p>
+                <p class="flex-item">4</p>
+                <p class="flex-item">5</p>
+            </div>
+
+            <h4>align-items: center</h4>
+            <div class="flex-container h-300 align-items--center">
+                <p class="flex-item">1</p>
+                <p class="flex-item">2</p>
+                <p class="flex-item">3</p>
+                <p class="flex-item">4</p>
+                <p class="flex-item">5</p>
+            </div>
+
+            <h4>align-items: baseline</h4>
+            <div class="flex-container h-300 align-items--baseline">
+                <p class="flex-item fs-l">large</p>
+                <p class="flex-item fs--tiny">tiny</p>
+                <p class="flex-item fs--xl">XXL</p>
+                <p class="flex-item fs--l">large</p>
+                <p class="flex-item fs--md"><span class="baseline">medium</span></p>
+            </div>
+
+        </section>
+    </body>
+
+</html>

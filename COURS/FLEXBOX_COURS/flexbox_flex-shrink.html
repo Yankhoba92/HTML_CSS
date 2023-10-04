@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FLEXBOX_FLEX-SHRINK</title>
+        <link rel="stylesheet" href="./css/config.css">
+        <link rel="stylesheet" href="./css/flexbox_flex-shrink.css">
+    </head>
+
+    <body>
+        <section>
+            <h1>FLEXBOX</h1>
+            <p id="sommaire"><a href="./flexbox_sommaire.html"><img src="./img/home.png" alt="sommaire"></a></p>
+            <h2>flex-shrink : 1 (par défaut)</h2>
+            <h3>propriété appliquée sur le flex-item = ENFANT</h3>
+
+            <h4>
+                largeur du flex-container parent : 800px
+                <br>
+                largeur des flex-item : auto
+            </h4>
+            <div class="flex-container w-800">
+                <p class="w-shrink flex-shrink--1">flex-shrink : 1</p>
+                <p class="w-shrink">flex-shrink: rien</p>
+                <p class="w-shrink flex-shrink--0">flex-shrink: 0</p>
+            </div>
+
+            <h4>
+                largeur du flex-container parent : 800px
+                <br>
+                largeur des flex-item: 500px
+            </h4>
+            <div class="flex-container w-800">
+                <p class="w-shrink w-500 flex-shrink--1">flex-shrink : 1</p>
+                <p class="w-shrink w-500">flex-shrink: rien</p>
+                <p class="w-shrink w-500 flex-shrink--0">flex-shrink: 0</p>
+            </div>
+
+            <h4>
+                largeur du flex-container parent : 800px
+                <br>
+                largeur des flex-item width:auto et flex-basis : 500px
+            </h4>
+            <div class="flex-container w-800">
+                <p class="w-shrink flex-basis-500 flex-shrink--1">flex-shrink : 1</p>
+                <p class="w-shrink flex-basis-500 flex-shrink--0">flex-shrink: 0</p>
+                <p class="w-shrink flex-basis-500 flex-shrink--1">flex-shrink: 1</p>
+            </div>
+
+            <h4>
+                largeur du flex-container parent : 800px
+                <br>
+                largeur des flex-item width:300px et flex-basis : 500px
+            </h4>
+            <div class="flex-container w-800">
+                <p class="w-shrink w-compare flex-shrink--1">flex-shrink : 1</p>
+                <p class="w-shrink w-compare flex-shrink--0">flex-shrink: 0</p>
+                <p class="w-shrink w-compare flex-shrink--1">flex-shrink: 1</p>
+            </div>
+        </section>
+    </body>
+
+</html>

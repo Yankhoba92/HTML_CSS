@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FLEXBOX_ORDER</title>
+        <link rel="stylesheet" href="./css/config.css">
+        <link rel="stylesheet" href="./css/flexbox_order.css">
+    </head>
+
+    <body>
+        <section>
+            <h1>FLEXBOX</h1>
+            <p id="sommaire"><a href="./flexbox_sommaire.html"><img src="./img/home.png" alt="sommaire"></a></p>
+            <h2>order</h2>
+            <h3>propriété appliquée sur le flex-item = ENFANT</h3>
+            <h4>order: 0 (par défaut)</h4>
+            <div class="flex-container order">
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+            </div>
+
+            <h4>order: 1</h4>
+            <div class="flex-container order">
+                <p class="flex-item dernier">order 1</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+            </div>
+
+            <h4>order: -1</h4>
+            <div class="flex-container order">
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item premier">order: -1</p>
+            </div>
+
+            <h4>order: -2 / order: -1</h4>
+            <div class="flex-container order">
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item moinsDeux">order: -2</p>
+                <p class="flex-item premier">order: -1</p>
+            </div>
+
+            <h4>order: 2 / order: 3</h4>
+            <div class="flex-container order">
+                <p class="flex-item deux">order: 2</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item trois">order: 3</p>
+                <p class="flex-item">order: 0</p>
+                <p class="flex-item">order: 0</p>
+            </div>
+
+        </section>
+    </body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FLEXBOX_ALIGN-CONTENT</title>
+        <link rel="stylesheet" href="./css/config.css">
+        <link rel="stylesheet" href="./css/flexbox_align-content.css">
+    </head>
+
+    <body>
+        <!-- appliquer les classes : flx-col h-300 pour une dispo en colonne -->
+        <section>
+            <h1>FLEXBOX</h1>
+            <p id="sommaire"><a href="./flexbox_sommaire.html"><img src="./img/home.png" alt="sommaire"></a></p>
+            <h2>align-content</h2>
+            <h3>propriété appliquée sur le conteneur parent UNIQUEMENT doté de la propriété flex-wrap</h3>
+            <h4>align-content: stretch: (par défaut)</h4>
+            <div class="flex-container wrap w-700 h-300 align-content--stretch">
+                <p class="flex-item h-auto">1</p>
+                <p class="flex-item h-auto w-500">2</p>
+                <p class="flex-item h-auto w-300">3</p>
+                <p class="flex-item h-auto w-500">4</p>
+                <p class="flex-item h-auto">5</p>
+            </div>
+
+            <h4>align-content: flex-start</h4>
+            <div class="flex-container wrap w-400 h-300 align-content--start">
+                <p class="flex-item h-auto">1</p>
+                <p class="flex-item h-auto w-500">2</p>
+                <p class="flex-item h-auto w-300">3</p>
+                <p class="flex-item h-auto w-500">4</p>
+                <p class="flex-item h-auto">5</p>
+            </div>
+
+            <h4>align-content: flex-start</h4>
+            <div class="flex-container wrap h-300 align-content--end">
+                <p class="flex-item h-auto">1</p>
+                <p class="flex-item h-auto w-500">2</p>
+                <p class="flex-item h-auto w-300">3</p>
+                <p class="flex-item h-auto w-500">4</p>
+                <p class="flex-item h-auto">5</p>
+            </div>
+
+            <h4>align-content: center</h4>
+            <div class="flex-container wrap h-300 align-content--center">
+                <p class="flex-item h-auto">1</p>
+                <p class="flex-item h-auto w-500">2</p>
+                <p class="flex-item h-auto w-300">3</p>
+                <p class="flex-item h-auto w-500">4</p>
+                <p class="flex-item h-auto">5</p>
+            </div>
+
+            <h4>align-content: space-between</h4>
+            <div class="flex-container wrap h-300 align-content--space-between">
+                <p class="flex-item h-auto">1</p>
+                <p class="flex-item h-auto w-500">2</p>
+                <p class="flex-item h-auto w-300">3</p>
+                <p class="flex-item h-auto w-500">4</p>
+                <p class="flex-item h-auto">5</p>
+            </div>
+
+            <h4>align-content: space-around</h4>
+            <div class="flex-container wrap h-300 align-content--space-around">
+                <p class="flex-item h-auto">1</p>
+                <p class="flex-item h-auto w-500">2</p>
+                <p class="flex-item h-auto w-300">3</p>
+                <p class="flex-item h-auto w-500">4</p>
+                <p class="flex-item h-auto">5</p>
+            </div>
+
+        </section>
+    </body>
+
+</html>

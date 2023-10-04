@@ -11,35 +11,46 @@
 html {
   font-size: 62.5%; /* 0.625 * 16px = 10 px */
 }
+
 .galerie {
-  width: 100%;
+  display: flex;
+  gap: 2rem;
+  /* flex-direction: row; */
   flex-wrap: wrap;
-  display: inline-flex;
+  /* justify-content: flex-start; */
+    border: solid red 1px;
 }
-img {
-  place-self: stretch;
+
+.galerie > img {
+  flex: 1 1 auto;
+  /* width: auto;*/
+  height: auto;
+  max-width: 250px;
+  max-height: 150px;
+  /* margin: 5px; */
   object-fit: cover;
-  object-position: left;
-  width: 20rem;
-  height: 20rem;
-  flex-grow: 1;
-  transition: transform 0.1s;
+  /* */transition: transform 0.2s; 
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
 }
-.galerie:hover > img {
-  filter: grayscale(100%) blur(1px);
-  transform: translate(1px);
-  -webkit-transform: translate(1px);
-  -moz-transform: translate(1px);
-  -ms-transform: translate(1px);
-  -o-transform: translate(1px);
-  -webkit-filter: grayscale(100%) blur(1px);
+
+.galerie:hover img {
+  filter: blur(1px) brightness(0.8) grayscale(0.7);
+  transform: scale(0.8);
+  -webkit-filter: blur(1px) brightness(0.8) grayscale(0.7);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
 }
-section:hover > img:hover {
-  -ms-transform: scale(1.5);
-  /*IE9*/
-  -webkit-transform: scale(1.5);
-  /*Safari3-8*/
-  transform: scale(1.5);
-  filter: none;
-  -webkit-filter: none;
+
+.galerie img:hover {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.top {
+  object-position: center top;
 }
